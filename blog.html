@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  color: green;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+i {
+font-size:16px;
+}
+    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+        
+    <div class="header">
+      <h2>Software and Website Developer Team Blog</h2>
+    </div>
+    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 id="POST1">TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="card">
+          <h2 id="POST2">TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+                <h1>About Us</h1>
+          <p>Software and Website Developer Team is a small team based in Malaysia. Software and Website Developer Team is focused in website and software. Software and Website Developer Team is founded from a group of young friends with an interest in technology.</p>
+        </div>
+        <div class="card">
+          <h1>Follow Me</h1>
+          <p>Software and Website Developer Team also operated and have multiple social media. You could get the latest information about us in our official social media. If you like One Software and Website Developer Team, please check out and follow our social media.</p>
+          <a href="https://www.facebook.com/SWDT2022"><i class='bx bxl-facebook' style="font-size:50px;"></i></a>
+          <a href="https://twitter.com/SWDT2022"><i class='bx bxl-twitter' style="font-size:50px;"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <h2><i class='bx bx-copyright'></i> SWDT 2022</h2>
+    </div> 
+  </section>
+
+</body>
+</html>
